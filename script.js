@@ -2,7 +2,7 @@
 
 function copy(obj) {
     let clone = {};
-    
+
     for (const key in obj) {
         if (obj.hasOwnProperty(key)) {
             clone[key] = obj[key];
@@ -21,10 +21,12 @@ const ourCar = {
 }
 
 let newCar = copy(ourCar);
-newCar.model = 'Primera';
+let thirdCar = copy(ourCar);
 
 console.log(newCar);
+console.log(thirdCar);
 console.log(ourCar === newCar);
+console.log(ourCar === thirdCar);
 
 
 // Task 2
@@ -41,12 +43,15 @@ function numberOfStrings(obj) {
     return counter;
 };
 
-const ourCar = {
+console.log(numberOfStrings(ourCar));
+
+const anotherCar = {
     type: 'Nissan',
     color: 'Silver',
     class: 'D',
     year: 2002,
     fuel: 'petrol',
+    model: 'Primera',
 }
 
-console.log(numberOfStrings(ourCar));
+console.log(numberOfStrings(anotherCar));
