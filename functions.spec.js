@@ -21,7 +21,7 @@ describe('clone', () => {
     });
 });
 
-// Test for task 2
+// Tests for task 2
 
 describe('number of strings', () => {
     it('should give number of strings', () => {
